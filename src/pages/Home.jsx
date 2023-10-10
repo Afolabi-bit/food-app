@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, offset: 20, once: true });
     const timeout = setTimeout(() => {
-      //navigateTo("/welcome");
+      navigateTo("/welcome");
     }, 8000);
     return () => {
       clearTimeout(timeout);
