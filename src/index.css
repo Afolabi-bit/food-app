@@ -19,12 +19,12 @@ main.welcome {
 
 main.home {
   background-size: 220%;
-  background-position: 25% 130%;
+  background-position: 25% 170%;
 }
 
 main.welcome {
   background-size: 200%;
-  background-position: 85% 185%;
+  background-position: 85% 205%;
 }
 
 @media (min-width: 600px) {

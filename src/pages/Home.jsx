@@ -13,7 +13,7 @@ const Home = () => {
     AOS.init({ duration: 1000, offset: 120 });
     const timeout = setTimeout(() => {
       navigateTo("/welcome");
-    }, 4000);
+    }, 8000);
     return () => {
       clearTimeout(timeout);
     };
@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <main
-      className="home flex justify-center items-end  bg-no-repeat overflow-hidden h-screen w-screen"
+      className="home py-24 flex justify-center items-end  bg-no-repeat overflow-hidden h-screen w-screen"
       data-aos="zoom-out"
     >
       <img src={Loader2} alt="" className="absolute bottom-5 right-1/2" />
