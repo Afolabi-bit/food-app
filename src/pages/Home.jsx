@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <main
-      className="home py-24 flex justify-center items-end  bg-no-repeat overflow-hidden h-screen w-screen"
+      className="home pb-14 flex justify-center items-end  bg-no-repeat overflow-hidden h-screen w-full"
       data-aos="zoom-out"
     >
       <img src={Loader2} alt="" className="absolute bottom-5 right-1/2" />
