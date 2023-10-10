@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const Welcome = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, offset: 120 });
+    AOS.init({ duration: 1000, offset: 20, once: true });
   }, []);
 
   return (

@@ -10,9 +10,9 @@ const Home = () => {
   const navigateTo = useNavigate();
 
   useEffect(() => {
-    AOS.init({ duration: 1000, offset: 120 });
+    AOS.init({ duration: 1000, offset: 20, once: true });
     const timeout = setTimeout(() => {
-      navigateTo("/welcome");
+      //navigateTo("/welcome");
     }, 8000);
     return () => {
       clearTimeout(timeout);
@@ -24,7 +24,7 @@ const Home = () => {
       className="home pb-14 flex justify-center items-end  bg-no-repeat overflow-hidden h-screen w-full"
       data-aos="zoom-out"
     >
-      <img src={Loader2} alt="" className="absolute bottom-5 right-1/2" />
+      <img src={Loader2} alt="" className="absolute bottom-5  right-1/2" />
       <img src={Nature} alt="loader" />
     </main>
   );
