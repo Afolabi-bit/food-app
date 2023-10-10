@@ -2,10 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-main.home {
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main.home,
+main.welcome {
   background: url("./images/pizza-slice.png"), no-repeat;
+}
+
+main.home {
   background-size: 220%;
   background-position: 25% 130%;
+}
+
+main.welcome {
+  background-size: 200%;
+  background-position: 85% 185%;
+}
+
+@media (min-width: 600px) {
+  main.welcome {
+    background-size: 180%;
+    background-position: 85% 115%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -20,5 +46,15 @@ main.home {
     background-repeat: no-repeat;
     background-size: 140%;
     background-position: 20% 90%;
+  }
+  main.welcome {
+    background-size: 140%;
+    background-position: 75% 100%;
+  }
+}
+
+@media (max-height: 600px) {
+  main.welcome {
+    background-position: 85% 145%;
   }
 }
