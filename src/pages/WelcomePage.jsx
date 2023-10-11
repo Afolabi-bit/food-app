@@ -44,7 +44,7 @@ const Welcome = () => {
         </section>
       )}
       {trigger && (
-        <section className="get-started pb-16 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-screen">
+        <section className="get-started pb-16 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-full">
           <img
             src={Spices}
             alt="Spicies and vegetables"
