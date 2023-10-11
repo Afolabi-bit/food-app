@@ -12,11 +12,11 @@ const Login = () => {
   return (
     <main
       data-aos="zoom-out"
-      className="pb-9 pt-6 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-screen"
+      className="pb-9 pt-6 px-4 flex flex-col text-center justify-center md:justify-center items-center overflow-hidden min-h-screen  w-screen"
     >
-      <img src={Password} alt="password" />
+      <img src={Password} alt="password" className="h-28 mb-4" />
       <form action="#" className="w-full  md:w-2/3 lg:w-2/5">
-        <h1 className="font-semibold text-lg mb-12">Login to your account</h1>
+        <h1 className="font-semibold text-lg mb-10">Login to your account</h1>
         <input
           type="email"
           name="email"

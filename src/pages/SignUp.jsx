@@ -15,15 +15,15 @@ const SignUp = () => {
   return (
     <main
       data-aos="zoom-out"
-      className="pb-9 pt-6 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-full"
+      className="pb-9 pt-6 px-4 flex flex-col text-center justify-center md:justify-center items-center overflow-hidden min-h-screen  w-full"
     >
-      <img src={Account} alt="" className="mb-5" />
+      <img src={Account} alt="" className="mb-5 h-28" />
       <form action="#" className="w-full md:w-2/3 lg:w-2/5" data-aos="zoom-in">
         <h1 className="font-semibold text-xl text-[#142A37] mb-5">
           Sign up for free
         </h1>
         <div
-          className="form-control w-full  mb-7 relative"
+          className="form-control w-full  mb-5 relative"
           data-aos="fade-right"
         >
           <img
@@ -41,7 +41,7 @@ const SignUp = () => {
           />
         </div>
         <div
-          className="form-control w-full  mb-7 relative"
+          className="form-control w-full  mb-5 relative"
           data-aos="fade-left"
         >
           <img
@@ -59,7 +59,7 @@ const SignUp = () => {
           />
         </div>
         <div
-          className="form-control w-full  mb-12 relative"
+          className="form-control w-full  mb-8 relative"
           data-aos="fade-right"
         >
           <img
