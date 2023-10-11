@@ -37,7 +37,7 @@ const SignUp = () => {
             required
             autoComplete="off"
             placeholder="username"
-            className="w-full border-zinc-500 border rounded-[10px]  h-[52px] pl-11"
+            className="w-full border-zinc-500 border rounded-[10px] shadow h-[52px] pl-11"
           />
         </div>
         <div
@@ -55,7 +55,7 @@ const SignUp = () => {
             required
             autoComplete="off"
             placeholder="Email"
-            className="w-full border-[#888] border rounded-[10px]  h-[52px] pl-11"
+            className="w-full border-[#888] border rounded-[10px] shadow h-[52px] pl-11"
           />
         </div>
         <div
@@ -72,7 +72,7 @@ const SignUp = () => {
             name="password"
             required
             placeholder="Password"
-            className="w-full border-zinc-500 border rounded-[10px]  h-[52px] pl-11"
+            className="w-full border-zinc-500 border rounded-[10px] shadow h-[52px] pl-11"
           />
         </div>
         <button

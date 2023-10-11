@@ -14,22 +14,22 @@ const Login = () => {
           required
           autoComplete="off"
           placeholder="Email"
-          className="w-full border-[#888] border mb-6 rounded-[10px]  h-[52px] pl-4"
+          className="w-full border-[#888] border mb-6 rounded-[10px]  shadow h-[52px] pl-4"
         />
         <input
           type="password"
           name="password"
           required
           placeholder="Password"
-          className="w-full border-zinc-500 mb-6 border rounded-[10px]  h-[52px] pl-4"
+          className="w-full border-zinc-500 mb-6 border rounded-[10px]  shadow h-[52px] pl-4"
         />
         <p className="text-md font-medium mb-6">or continue with</p>
-        <div className="flex justify-between mx-auto w-full md:w-2/3 mb-4">
-          <button className="flex h-[44px]">
+        <div className="flex justify-between mx-auto  w-full md:w-2/3 mb-4">
+          <button className="flex h-[44px] shadow justify-center items-center px-5 rounded-[10px]">
             <img src={Facebook} alt="facebook logo" className="mr-2" />
             <span className="font-medium">Facebook</span>
           </button>
-          <button className="flex h-[44px]">
+          <button className="flex h-[44px] shadow justify-center items-center px-5 rounded-[10px]">
             <img src={Google} alt="Google logo" className="mr-2" />
             <span className="font-medium">Google</span>
           </button>
