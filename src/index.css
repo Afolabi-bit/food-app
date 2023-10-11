@@ -13,7 +13,7 @@ body {
 }
 
 main.home,
-main.welcome {
+section.welcome {
   background: url("./images/pizza-slice.png"), no-repeat;
 }
 
@@ -22,13 +22,13 @@ main.home {
   background-position: 25% 170%;
 }
 
-main.welcome {
+section.welcome {
   background-size: 220%;
   background-position: 85% 205%;
 }
 
 @media (min-width: 600px) {
-  main.welcome {
+  section.welcome {
     background-size: 180%;
     background-position: 85% 115%;
   }
@@ -47,14 +47,14 @@ main.welcome {
     background-size: 140%;
     background-position: 20% 90%;
   }
-  main.welcome {
+  section.welcome {
     background-size: 140%;
     background-position: 75% 100%;
   }
 }
 
 @media (max-height: 600px) {
-  main.welcome {
+  section.welcome {
     background-position: 85% 145%;
   }
 }
