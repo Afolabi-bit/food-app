@@ -11,6 +11,10 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({ duration: 1000, offset: 20, once: true });
+    window.scrollTo({
+      bottom: 0,
+      behavior: "smooth",
+    });
     const timeout = setTimeout(() => {
       navigateTo("/welcome");
     }, 8000);

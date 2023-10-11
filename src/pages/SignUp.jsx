@@ -10,6 +10,10 @@ import "aos/dist/aos.css";
 const SignUp = () => {
   useEffect(() => {
     AOS.init({ duration: 700, offset: 0, once: true });
+    window.scrollTo({
+      bottom: 0,
+      behavior: "smooth",
+    });
   }, []);
 
   return (
