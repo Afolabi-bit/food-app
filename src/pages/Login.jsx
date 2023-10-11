@@ -1,10 +1,19 @@
+import { useEffect } from "react";
 import Password from "../images/Password.png";
 import Facebook from "../images/Facebook.png";
 import Google from "../images/Google.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Login = () => {
+  useEffect(() => {
+    AOS.init({ duration: 700, offset: 0, once: true });
+  }, []);
   return (
-    <main className="pb-9 pt-6 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-screen">
+    <main
+      data-aos="zoom-out"
+      className="pb-9 pt-6 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-screen"
+    >
       <img src={Password} alt="password" />
       <form action="#" className="w-full  md:w-2/3 lg:w-2/5">
         <h1 className="font-semibold text-lg mb-12">Login to your account</h1>
