@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import DashDot from "../images/dashdot.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useGlobalContext } from "../context";
+import useGlobalContext from "../context";
 import Spices from "../images/Large set of isolated vegetables on a white background.png";
 
 const Welcome = () => {

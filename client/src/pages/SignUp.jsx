@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Account from "../images/Account.png";
 import Profile from "../images/profile-svg.svg";
 import Email from "../images/email.svg";
 import Padlock from "../images/lock.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useGlobalContext from "../context";
+import axios from "axios";
 
 const SignUp = () => {
   useEffect(() => {
@@ -15,6 +17,20 @@ const SignUp = () => {
       behavior: "smooth",
     });
   }, []);
+
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = () => {
+    axios.get("http://localhost:3001/register").then((res) => {
+      console.log(res.data);
+    });
+  };
 
   return (
     <main
@@ -38,6 +54,8 @@ const SignUp = () => {
           <input
             type="text"
             name="usernanme"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             required
             autoComplete="off"
             placeholder="username"
@@ -56,6 +74,8 @@ const SignUp = () => {
           <input
             type="email"
             name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
             autoComplete="off"
             placeholder="Email"
@@ -74,6 +94,8 @@ const SignUp = () => {
           <input
             type="password"
             name="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
             placeholder="Password"
             className="w-full border-zinc-500 border rounded-[10px] shadow h-[52px] pl-11"
