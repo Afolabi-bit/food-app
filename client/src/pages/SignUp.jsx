@@ -19,7 +19,7 @@ const SignUp = () => {
   return (
     <main
       data-aos="zoom-out"
-      className="pb-9 pt-6 px-4 flex flex-col text-center justify-center md:justify-center items-center overflow-hidden min-h-screen  w-full"
+      className="pb-9 pt-6 px-8 flex flex-col text-center justify-center md:justify-center items-center overflow-hidden min-h-screen  w-full"
     >
       <img src={Account} alt="" className="mb-5 h-28" />
       <form action="#" className="w-full md:w-2/3 lg:w-2/5" data-aos="zoom-in">

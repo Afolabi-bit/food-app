@@ -52,7 +52,7 @@ const Welcome = () => {
           <img
             src={Spices}
             alt="Spicies and vegetables"
-            className="mb-8"
+            className="mb-8 w-60 lg:w-72"
             data-aos="zoom-out"
           />
           <div className="flex flex-col text-center justify-end items-center">
