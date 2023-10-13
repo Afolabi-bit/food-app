@@ -18,11 +18,11 @@ const SignUp = () => {
     });
   }, []);
 
-  const [username, setUsername] = useState("");
+  /*   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [password, setPassword] = useState(""); */
 
-  useEffect(() => {
+  /* useEffect(() => {
     fetchData();
   }, []);
 
@@ -30,7 +30,7 @@ const SignUp = () => {
     axios.get("http://localhost:3001/register").then((res) => {
       console.log(res.data);
     });
-  };
+  }; */
 
   return (
     <main
@@ -53,9 +53,9 @@ const SignUp = () => {
           />
           <input
             type="text"
-            name="usernanme"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            name="usernanme" /* 
+            value={username} 
+            onChange={(e) => setUsername(e.target.value)} */
             required
             autoComplete="off"
             placeholder="username"
@@ -73,9 +73,9 @@ const SignUp = () => {
           />
           <input
             type="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            name="email" /* 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)}  */
             required
             autoComplete="off"
             placeholder="Email"
@@ -93,9 +93,9 @@ const SignUp = () => {
           />
           <input
             type="password"
-            name="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            name="password" /* 
+            value={password}  
+            onChange={(e) => setPassword(e.target.value)} */
             required
             placeholder="Password"
             className="w-full border-zinc-500 border rounded-[10px] shadow h-[52px] pl-11"

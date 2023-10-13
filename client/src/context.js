@@ -10,12 +10,6 @@ export const AppProvider = ({ children }) => {
       value={{
         trigger,
         setTrigger,
-        username,
-        setUsername,
-        email,
-        setEmail,
-        password,
-        setPassword,
       }}
     >
       {children}
