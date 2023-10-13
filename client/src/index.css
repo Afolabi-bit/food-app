@@ -14,7 +14,7 @@ body {
 
 main.home,
 section.welcome {
-  background: url("./images/pizza-slice.svg"), no-repeat;
+  background: url("./images/pizza-slice.jpg"), no-repeat;
 }
 
 main.home {
