@@ -4,6 +4,9 @@ import Facebook from "../images/Facebook.png";
 import Google from "../images/Google.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { SignIn } from "@clerk/clerk-react";
+
+const SignInPage = () => <SignIn signUpUrl="/signup" />;
 
 const Login = () => {
   useEffect(() => {
@@ -19,7 +22,8 @@ const Login = () => {
       className="pb-9 pt-6 px-8 flex flex-col text-center justify-center md:justify-center items-center overflow-hidden min-h-screen  w-full"
     >
       <img src={Password} alt="password" className="h-28 mb-4" />
-      <form action="#" className="w-full  md:w-2/3 lg:w-2/5">
+      <SignInPage />
+      {/* <form action="#" className="w-full  md:w-2/3 lg:w-2/5">
         <h1 className="font-semibold text-lg mb-10">Login to your account</h1>
         <input
           type="email"
@@ -60,7 +64,7 @@ const Login = () => {
         >
           Login
         </button>
-      </form>
+      </form> */}
     </main>
   );
 };

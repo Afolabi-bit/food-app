@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Nature from "../images/Nature-food-Logo-on-transparent-background-PNG 2.png";
-import Loader from "../images/loader-simple-transparent.gif";
 import Loader2 from "../images/loader-simple.gif";
 import AOS from "aos";
 import "aos/dist/aos.css";
