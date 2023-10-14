@@ -42,6 +42,8 @@ const SignUpComp = () => {
         Sign up for free
       </h1>
       <SignUp
+        afterSignInUrl="/market"
+        afterSignUpUrl="/market"
         redirectUrl="/market"
         signInUrl="/login"
         path="/signup"
