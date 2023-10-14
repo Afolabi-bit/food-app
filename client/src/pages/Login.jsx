@@ -16,6 +16,7 @@ const Login = () => {
       behavior: "smooth",
     });
   }, []);
+
   return (
     <main
       data-aos="zoom-out"
