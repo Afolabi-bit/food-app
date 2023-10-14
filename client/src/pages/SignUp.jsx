@@ -9,10 +9,6 @@ import "aos/dist/aos.css";
 
 import { SignUp } from "@clerk/clerk-react";
 
-function SignUpPage() {
-  return <SignUp redirectUrl="/market" signInUrl="/login" />;
-}
-
 const SignUpComp = () => {
   useEffect(() => {
     AOS.init({ duration: 700, offset: 0, once: true });
@@ -45,7 +41,12 @@ const SignUpComp = () => {
       <h1 className="font-semibold text-xl text-[#142A37] mb-5">
         Sign up for free
       </h1>
-      <SignUpPage />
+      <SignUp
+        redirectUrl="/market"
+        signInUrl="/login"
+        path="/signup"
+        routing="path"
+      />
     </main>
   );
 };
