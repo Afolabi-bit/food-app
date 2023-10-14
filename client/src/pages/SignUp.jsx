@@ -41,6 +41,7 @@ const SignUpComp = () => {
       <h1 className="font-semibold text-xl text-[#142A37] mb-5">
         Sign up for free
       </h1>
+
       <SignUp
         afterSignInUrl="/market"
         afterSignUpUrl="/market"
