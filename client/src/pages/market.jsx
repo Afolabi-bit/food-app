@@ -1,5 +1,7 @@
+import { UserButton } from "@clerk/clerk-react";
+
 const Market = () => {
-  return <h1>MarketPLace</h1>;
+  return <UserButton />;
 };
 
 export default Market;
