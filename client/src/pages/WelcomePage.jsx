@@ -10,10 +10,6 @@ import Spices from "../images/Large set of isolated vegetables on a white backgr
 const Welcome = () => {
   useEffect(() => {
     AOS.init({ duration: 700, offset: 20, once: true });
-    window.scrollTo({
-      bottom: 0,
-      behavior: "smooth",
-    });
   }, []);
   const { trigger, setTrigger } = useGlobalContext();
   return (

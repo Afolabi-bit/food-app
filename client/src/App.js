@@ -29,7 +29,6 @@ const ClerkProviderWithRoutes = () => {
     <ClerkProvider publishableKey={clerkPubKey} navigate={(to) => navigate(to)}>
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
-        <Route path="/welcome" element={<Welcome />}></Route>
         <Route path="/signup" element={<SignUpComp />}></Route>
         <Route path="/signin" element={<Login />}></Route>
         <Route
