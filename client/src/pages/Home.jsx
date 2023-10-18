@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useUser } from "@clerk/clerk-react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
 import DashDot from "../images/dashdot.svg";
@@ -10,6 +11,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
+  const { isSignedIn } = useUser();
   const { trigger, setTrigger } = useGlobalContext();
   const navigateTo = useNavigate();
   let indicator;
@@ -24,14 +26,21 @@ const Home = () => {
     }
   };
 
-  /* checkFirstOpen(); */
+  checkFirstOpen();
 
   useEffect(() => {
-    AOS.init({ duration: 1000, offset: 20, once: true });
-    if (indicator !== 1) {
+    AOS.init({ duration: 500, offset: 20, once: true });
+    if (isSignedIn) {
       const timeout = setTimeout(() => {
         navigateTo("/market");
-      }, 8000);
+      }, 2000);
+      return () => {
+        clearTimeout(timeout);
+      };
+    } else {
+      const timeout = setTimeout(() => {
+        navigateTo("/welcome");
+      }, 4000);
       return () => {
         clearTimeout(timeout);
       };
@@ -41,7 +50,7 @@ const Home = () => {
   return (
     <main
       className="home pb-14 flex justify-center items-end  bg-no-repeat overflow-hidden h-screen w-full"
-      data-aos="zoom-out"
+      data-aos="fade-right"
     >
       <img src={Loader2} alt="" className="absolute bottom-5  right-1/2" />
       <img src={Nature} alt="loader" />

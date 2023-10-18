@@ -1,9 +1,10 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Account from "../images/Account.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { SignUp } from "@clerk/clerk-react";
+import { SignUp, SignedIn } from "@clerk/clerk-react";
 
 const SignUpComp = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const SignUpComp = () => {
       data-aos="zoom-out"
       className="pb-9 pt-6 px-8 flex flex-col text-center justify-center md:justify-center items-center overflow-hidden min-h-screen  w-full"
     >
+      <SignedIn>{useNavigate("/market")}</SignedIn>
       <img src={Account} alt="" className="mb-5 h-28" />
       <h1 className="font-semibold text-xl text-[#142A37] mb-5">
         Sign up for free

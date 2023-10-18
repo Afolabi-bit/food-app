@@ -44,7 +44,10 @@ const Welcome = () => {
         </section>
       )}
       {trigger && (
-        <section className="get-started pb-16 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-full">
+        <section
+          data-aos="fade-right"
+          className="get-started pb-16 px-4 flex flex-col text-center justify-end md:justify-center items-center overflow-hidden min-h-screen  w-full"
+        >
           <img
             src={Spices}
             alt="Spicies and vegetables"
@@ -52,21 +55,14 @@ const Welcome = () => {
             data-aos="zoom-out"
           />
           <div className="flex flex-col text-center justify-end items-center">
-            <h1
-              className="text-3xl mb-4 font-semibold text-[#142A37]"
-              data-aos="fade-down"
-            >
+            <h1 className="text-3xl mb-4 font-semibold text-[#142A37]">
               Get ready to taste the best meals
             </h1>
-            <p
-              className="text-[#142A37] text-lg font-medium mb-10 md:w-2/3"
-              data-aos="fade-down"
-            >
+            <p className="text-[#142A37] text-lg font-medium mb-10 md:w-2/3">
               A warm welcome and lots of good wishes on becoming part of our
               growing team.
             </p>
             <Link
-              data-aos="fade-up"
               to={"/signup"}
               className="flex justify-center rounded-[18px] text-white items-center bg-[#25401D] w-full md:w-2/3 py-6  "
             >
