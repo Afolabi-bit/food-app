@@ -18,9 +18,9 @@ import Login from "./pages/Login";
 import Market from "./pages/market";
 import Welcome from "./pages/WelcomePage";
 
-if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
+/* if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
-}
+} */
 
 const clerkPubKey = process.env.REACT_APP_CLERK_PUBLISHABLE_KEY;
 
