@@ -11,7 +11,7 @@ import { colors } from "../data";
 const Market = () => {
   const { user } = useUser();
   return (
-    <main className="market mt-[50px] mb-[90px] py-8 px-[24px]">
+    <main className="market  mt-[50px] mb-[90px] py-8 px-[24px]">
       <header className="fixed bg-white w-full h-[70px] z-10 top-0 left-0 flex justify-between items-center px-[24px]">
         <div className="user flex ">
           <div className="image translate-y-1 ">
@@ -30,7 +30,7 @@ const Market = () => {
           <img src={Bell} alt="Notifications" className="" />
         </button>
       </header>
-      <section>
+      <section className="center">
         <form className="w-full flex items-center relative mb-[30px]">
           <img
             src={MagGlass}
@@ -101,7 +101,7 @@ const Market = () => {
           </div>
         </article>
 
-        <article className="w-full  p-1 shadow-xl rounded-[10px]">
+        <article className="w-full mb-8  p-1 shadow-xl rounded-[10px]">
           <h3 className="text-[16px] mb-[10px] font-semibold text-[#142A37]">
             Popular Menu
           </h3>
@@ -128,6 +128,14 @@ const Market = () => {
               Order
             </button>
           </div>
+        </article>
+        <article className="flex justify-center items-center">
+          <Link
+            className="text-[14px] center font-normal w-fit opacity-50"
+            to={"/menu"}
+          >
+            see &nbsp; more &nbsp; >>>
+          </Link>
         </article>
       </section>
       <footer className="fixed bg-white px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
