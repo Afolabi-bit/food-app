@@ -1,14 +1,18 @@
 import { UserButton, useUser } from "@clerk/clerk-react";
+import { Link } from "react-router-dom";
 import Bell from "../images/notification-svg.svg";
 import Menu from "../images/menu-add-fill.svg";
 import MagGlass from "../images/search-line.svg";
 import Hero from "../images/hero.png";
+import Add from "../images/add.svg";
+import FoodMenu from "../data";
+import { colors } from "../data";
 
 const Market = () => {
   const { user } = useUser();
   return (
-    <main className="market py-8 px-[24px]">
-      <header className="flex justify-between items-center mb-[33px]">
+    <main className="market mt-[50px] mb-[90px] py-8 px-[24px]">
+      <header className="fixed bg-white w-full h-[70px] z-10 top-0 left-0 flex justify-between items-center px-[24px]">
         <div className="user flex ">
           <div className="image translate-y-1 ">
             <UserButton />
@@ -27,7 +31,7 @@ const Market = () => {
         </button>
       </header>
       <section>
-        <form className="w-full flex items-center relative mb-[33px]">
+        <form className="w-full flex items-center relative mb-[30px]">
           <img
             src={MagGlass}
             className="absolute top-[50%] translate-y-[-50%] left-[12px]"
@@ -42,7 +46,7 @@ const Market = () => {
             <img src={Menu} size={"24px"} alt="" />
           </button>
         </form>
-        <article className="hero flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
+        <article className="hero mb-[30px] flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
           <div className="text pt-[20px] pl-[20px] text-white">
             <h1 className="text-[20px] font-semibold mb-[18px]">
               Always ready for you
@@ -59,8 +63,74 @@ const Market = () => {
             />
           </div>
         </article>
+
+        <article className="mb-[30px]">
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-[16px] font-semibold text-[#142A37]">
+              Available Menu
+            </h3>
+            <Link
+              to={"/menu"}
+              className="text-[#142A37] text-[10px] font-[400] opacity-50"
+            >
+              view more
+            </Link>
+          </div>
+          <div className="flex gap-x-[15px] justify-between">
+            {FoodMenu.slice(0, 2).map((f) => {
+              const { name, id, image, time } = f;
+              return (
+                <Link to={`/menu/${name}`} key={id} className="w-[50%]">
+                  <img className="h-[103px] w-[100%] mb-2" src={image} alt="" />
+                  <div className="flex justify-between mt-1">
+                    <div className="flex-col ">
+                      <p className="font-semibold text-[12px] text-[#142A37]">
+                        {name}
+                      </p>
+                      <p className="font-[400] translate-y-[-3px] text-[10px] opacity-50 text-[#142A37]">
+                        {time}
+                      </p>
+                    </div>
+                    <button className="w-[20px] h-[20px] bg-[#DB040B] flex items-center justify-center rounded-full">
+                      <img src={Add} alt="add to cart" />
+                    </button>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </article>
+
+        <article className="w-full  p-1 shadow-xl rounded-[10px]">
+          <h3 className="text-[16px] mb-[10px] font-semibold text-[#142A37]">
+            Popular Menu
+          </h3>
+          <div className="flex relative">
+            <div className={`bg-[#f3dddf] rounded-[10px]`}>
+              <img
+                className="w-[110%]"
+                src={FoodMenu[13].image}
+                alt={FoodMenu[13].name}
+              />
+            </div>
+            <div className="flex flex-col ml-3 ">
+              <h3 className="text-[#142A37] mt-2 text-[16px] font-semibold">
+                {FoodMenu[13].name}
+              </h3>
+              <p className="text-[#142A37] text-[10px] font-normal">
+                {FoodMenu[13].time}
+              </p>
+              <p className="text-[#142A37] mt-6 text-[16px] font-semibold">
+                {FoodMenu[13].price}
+              </p>
+            </div>
+            <button className="absolute text-white rounded-[5px] bottom-2 right-2 bg-[#DB040B] px-3 py-1">
+              Order
+            </button>
+          </div>
+        </article>
       </section>
-      <footer className="fixed px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
+      <footer className="fixed bg-white px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
         <button className="flex active flex-col items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

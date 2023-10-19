@@ -11,36 +11,23 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
-  const { isSignedIn } = useUser();
-  const { trigger, setTrigger } = useGlobalContext();
+  const { isSignedIn, user } = useUser();
   const navigateTo = useNavigate();
   let indicator;
 
-  const checkFirstOpen = () => {
-    indicator = localStorage.getItem("indicator");
-    if (indicator) {
-      indicator = JSON.parse(localStorage.getItem("indicator"));
-      return;
-    } else {
-      localStorage.setItem("indicator", JSON.stringify(1));
-    }
-  };
-
-  checkFirstOpen();
-
   useEffect(() => {
     AOS.init({ duration: 500, offset: 20, once: true });
-    if (isSignedIn) {
+    if (user && !isSignedIn) {
       const timeout = setTimeout(() => {
-        navigateTo("/market");
-      }, 2000);
+        navigateTo("/welcome");
+      }, 4000);
       return () => {
         clearTimeout(timeout);
       };
     } else {
       const timeout = setTimeout(() => {
-        navigateTo("/welcome");
-      }, 4000);
+        navigateTo("/market");
+      }, 1000);
       return () => {
         clearTimeout(timeout);
       };
