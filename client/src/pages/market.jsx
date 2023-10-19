@@ -1,12 +1,14 @@
 import { UserButton, useUser } from "@clerk/clerk-react";
 import Bell from "../images/notification-svg.svg";
-import Home from "../images/home-svg.svg";
+import Menu from "../images/menu-add-fill.svg";
+import MagGlass from "../images/search-line.svg";
+import Hero from "../images/hero.png";
 
 const Market = () => {
   const { user } = useUser();
   return (
-    <main className="market py-8 px-5">
-      <header className="flex justify-between items-center">
+    <main className="market py-8 px-[24px]">
+      <header className="flex justify-between items-center mb-[33px]">
         <div className="user flex ">
           <div className="image translate-y-1 ">
             <UserButton />
@@ -24,7 +26,40 @@ const Market = () => {
           <img src={Bell} alt="Notifications" className="" />
         </button>
       </header>
-      <section className="hero h-[148px] bg-[#25401D] rounded-[10px] w-full"></section>
+      <section>
+        <form className="w-full flex items-center relative mb-[33px]">
+          <img
+            src={MagGlass}
+            className="absolute top-[50%] translate-y-[-50%] left-[12px]"
+            alt=""
+          />
+          <input
+            type="text"
+            placeholder="Search meal"
+            className="bg-[#F5F5F5] h-[52px] rounded-[10px] pl-11 w-full"
+          />
+          <button className="h-[33px] w-[44px] px-[10px]">
+            <img src={Menu} size={"24px"} alt="" />
+          </button>
+        </form>
+        <article className="hero flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
+          <div className="text pt-[20px] pl-[20px] text-white">
+            <h1 className="text-[20px] font-semibold mb-[18px]">
+              Always ready for you
+            </h1>
+            <button className="bg-white text-[#25401D] text-[10px] font-semibold px-[13px] py-[8px] rounded-[5px]">
+              Buy Now
+            </button>
+          </div>
+          <div className="img relative">
+            <img
+              src={Hero}
+              className="w-[203px] translate-y-12 shadow-sm"
+              alt=""
+            />
+          </div>
+        </article>
+      </section>
       <footer className="fixed px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
         <button className="flex active flex-col items-center justify-center">
           <svg
