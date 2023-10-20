@@ -29,18 +29,18 @@ const Market = () => {
           </button>
         </form>
         <article className="hero mb-[30px] flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
-          <div className="text pt-[20px] pl-[20px] text-white">
-            <h1 className="text-[20px] font-semibold mb-[18px]">
+          <div className="text pt-[20px] w-[50%] pl-[20px] text-white">
+            <h1 className="text-[20px]  font-semibold mb-[18px]">
               Always ready for you
             </h1>
             <button className="bg-white text-[#25401D] text-[10px] font-semibold px-[13px] py-[8px] rounded-[5px]">
               Buy Now
             </button>
           </div>
-          <div className="img flex items-end ">
+          <div className="img w-[50%] flex items-end ">
             <img
               src={Hero}
-              className="w-[203px] h-[120px] object-cover object-left  translate-y-2 shadow-sm  "
+              className="w-full h-[120px] object-cover object-left  translate-y-2 shadow-sm  "
               alt=""
             />
           </div>
