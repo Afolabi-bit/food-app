@@ -27,7 +27,7 @@ const Home = () => {
     if (user !== null) {
       const timeout = setTimeout(() => {
         navigateTo("/market");
-      }, 1000);
+      }, 300);
       return () => {
         clearTimeout(timeout);
       };
