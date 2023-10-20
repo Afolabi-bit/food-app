@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({ duration: 500, offset: 20, once: true });
-    if (user && !isSignedIn) {
+    if (!user && !isSignedIn) {
       const timeout = setTimeout(() => {
         navigateTo("/welcome");
       }, 4000);
