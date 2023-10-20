@@ -40,7 +40,7 @@ const Market = () => {
           <div className="img flex items-end ">
             <img
               src={Hero}
-              className="w-[203px] translate-y-2 shadow-sm  "
+              className="w-[203px] h-[120px] object-cover translate-y-2 shadow-sm  "
               alt=""
             />
           </div>
