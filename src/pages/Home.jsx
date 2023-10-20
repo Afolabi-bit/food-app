@@ -11,20 +11,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Home = () => {
-  const { isSignedIn, user } = useUser();
+  const { user } = useUser();
   const navigateTo = useNavigate();
-  let indicator;
 
   useEffect(() => {
     AOS.init({ duration: 500, offset: 20, once: true });
-    if (!user && !isSignedIn) {
+    if (user === null) {
       const timeout = setTimeout(() => {
         navigateTo("/welcome");
-      }, 4000);
+      }, 2000);
       return () => {
         clearTimeout(timeout);
       };
-    } else {
+    }
+    if (user !== null) {
       const timeout = setTimeout(() => {
         navigateTo("/market");
       }, 1000);
