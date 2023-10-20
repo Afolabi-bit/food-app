@@ -28,6 +28,9 @@ const Market = () => {
             <img src={Menu} size={"24px"} alt="" />
           </button>
         </form>
+
+        {/* Hero */}
+
         <article className="hero mb-[30px] flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
           <div className="text pt-[20px] w-[50%] pl-[20px] text-white">
             <h1 className="text-[20px]  font-semibold mb-[18px]">
@@ -45,6 +48,8 @@ const Market = () => {
             />
           </div>
         </article>
+
+        {/* Available Menu */}
 
         <article className="mb-[30px]">
           <div className="flex justify-between items-center mb-4">
@@ -83,11 +88,13 @@ const Market = () => {
           </div>
         </article>
 
-        <article className="w-full mb-8  p-1 shadow-xl rounded-[10px]">
+        {/* Popular Menu */}
+
+        <article className="w-full mb-8  p-1  ">
           <h3 className="text-[16px] mb-[10px] font-semibold text-[#142A37]">
             Popular Menu
           </h3>
-          <div className="flex relative">
+          <div className="flex relative rounded-[10px] shadow-xl">
             <div className={`bg-[#f3dddf] rounded-[10px]`}>
               <img
                 className="w-[110%]"
@@ -111,6 +118,8 @@ const Market = () => {
             </button>
           </div>
         </article>
+
+        {/*  See More Link */}
         <article className="flex justify-center items-center">
           <Link
             className="text-[14px] center font-normal w-fit opacity-50"
