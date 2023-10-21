@@ -7,7 +7,7 @@ import SpecialCombo from "./images/special-combo.jpg";
 import SpecialComboTwo from "./images/special-combo-2.jpg";
 import SpecialComboThree from "./images/special-combo-3.jpg";
 import SpecialComboFour from "./images/special-combo-4.jpg";
-import ChickenSalad from "./images/chicken-salad.jpg";
+import ChickenSalad from "./images/chicken-salad-removebg-preview.png";
 import SpecialPizza from "./images/special-pizza.jpg";
 import SpecialPancake from "./images/special-pancake.jpg";
 import SpecialPizzaTwo from "./images/special-pizza-2.jpg";
