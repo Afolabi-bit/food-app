@@ -1,9 +1,18 @@
 import Menu from "../images/menu-add-fill.svg";
 import MagGlass from "../images/search-line.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const SearchForm = () => {
+  useEffect(() => {
+    AOS.init({ duration: 500, offset: 0, once: true });
+  }, []);
   return (
-    <form className="w-full flex items-center relative mb-[30px]">
+    <form
+      data-aos="zoom-out"
+      className="w-full flex items-center relative mb-[30px] "
+    >
       <img
         src={MagGlass}
         className="absolute top-[50%] translate-y-[-50%] left-[12px]"

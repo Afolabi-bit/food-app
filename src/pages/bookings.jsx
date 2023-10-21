@@ -2,13 +2,19 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import { BookingList } from "../data";
 import { SearchForm } from "../components/utils";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Bookings = () => {
+  useEffect(() => {
+    AOS.init({ duration: 500, offset: 0, once: true });
+  }, []);
   return (
     <main className=" pt-[100px] px-[24px] pb-[120px]">
       <Header page={"bookings"} />
       <SearchForm />
-      <section>
+      <section data-aos="zoom-out">
         <h2 className="text-[#142A37] text-base font-semibold mb-4">
           Popular Restaurant
         </h2>

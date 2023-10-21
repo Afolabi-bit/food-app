@@ -15,13 +15,10 @@ const Market = () => {
     AOS.init({ duration: 500, offset: 0, once: true });
   }, []);
   return (
-    <main
-      className="market  pt-[100px] mb-[90px] py-8 px-[24px]"
-      data-aos="zoom-out"
-    >
+    <main className="pt-[100px] relative px-[24px] pb-[120px] ">
       <Header page={"home"} />
       <SearchForm />
-      <section className="center">
+      <section data-aos="zoom-out" className="center">
         {/* Hero */}
 
         <article className="hero mb-[30px] flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
@@ -83,7 +80,7 @@ const Market = () => {
 
         {/* Popular Menu */}
 
-        <article className="w-full mb-8  p-1  ">
+        <article className="w-full mb-2  p-1  ">
           <h3 className="text-[16px] mb-[10px] font-semibold text-[#142A37]">
             Popular Menu
           </h3>
