@@ -6,8 +6,6 @@ import {
 } from "react-router-dom";
 import {
   ClerkProvider,
-  SignIn,
-  SignUp,
   SignedIn,
   SignedOut,
   RedirectToSignIn,
@@ -19,6 +17,9 @@ import Market from "./pages/market";
 import Welcome from "./pages/WelcomePage";
 import Menu from "./pages/menu";
 import Details from "./pages/details";
+import Bookings from "./pages/bookings";
+import ProfilePage from "./pages/profile";
+import Cart from "./pages/cart";
 
 /* if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
@@ -62,6 +63,9 @@ const ClerkProviderWithRoutes = () => {
           }
         ></Route>
         <Route exact path="/menu" element={<Menu />}></Route>
+        <Route exact path="/bookings" element={<Bookings />}></Route>
+        <Route exact path="/user" element={<ProfilePage />}></Route>
+        <Route exact path="/cart" element={<Cart />}></Route>
         <Route exact path="/menu/:id" element={<Details />}></Route>
       </Routes>
     </ClerkProvider>

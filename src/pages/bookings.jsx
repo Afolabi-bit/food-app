@@ -1,6 +1,12 @@
+import Footer from "../components/footer";
 import { BookingList } from "../data";
 
 const Bookings = () => {
-  return <h1>Bookings page</h1>;
+  return (
+    <main>
+      <h1>Bookings</h1>
+      <Footer type={"bookings"} />
+    </main>
+  );
 };
 export default Bookings;

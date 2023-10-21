@@ -40,7 +40,14 @@ const Footer = ({ type }) => {
         </svg>
         <span className="text-[10px] font-semibold">Notification</span>
       </Link>
-      <Link to={"/user"} className="flex  flex-col items-center justify-center">
+      <Link
+        to={"/user"}
+        className={
+          type == "profile"
+            ? "active flex  flex-col items-center justify-center"
+            : "flex  flex-col items-center justify-center"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="17"
@@ -57,7 +64,11 @@ const Footer = ({ type }) => {
       </Link>
       <Link
         to={"/bookings"}
-        className="flex  flex-col items-center justify-center"
+        className={
+          type === "bookings"
+            ? "active flex  flex-col items-center justify-center"
+            : "flex  flex-col items-center justify-center"
+        }
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +84,14 @@ const Footer = ({ type }) => {
         </svg>
         <span className="text-[10px] font-semibold">Bookings</span>
       </Link>
-      <Link to={"/cart"} className="flex  flex-col items-center justify-center">
+      <Link
+        to={"/cart"}
+        className={
+          type == "cart"
+            ? "active flex  flex-col items-center justify-center"
+            : "flex  flex-col items-center justify-center"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
