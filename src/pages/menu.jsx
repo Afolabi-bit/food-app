@@ -4,7 +4,7 @@ import Food from "../components/food";
 
 const Menu = () => {
   return (
-    <main className="mt-[50px] mb-[128px] py-8 px-[24px]">
+    <main className="mt-[50px] mb-[98px] py-8 px-[24px]">
       <Header page={"menu"} />
       <section className="w-full">
         {MenuList.map((food, index) => {
