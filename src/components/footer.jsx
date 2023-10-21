@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Footer = ({ type }) => {
   return (
     <footer className="fixed bg-white px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
-      <button
+      <Link
+        to={"/"}
         className={
           type == "home"
             ? "active flex  flex-col items-center justify-center"
@@ -21,8 +24,8 @@ const Footer = ({ type }) => {
           />
         </svg>
         <span className="text-[10px] font-semibold">Home</span>
-      </button>
-      <button className="flex  flex-col items-center justify-center">
+      </Link>
+      <Link className="flex  flex-col items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="21"
@@ -36,8 +39,8 @@ const Footer = ({ type }) => {
           />
         </svg>
         <span className="text-[10px] font-semibold">Notification</span>
-      </button>
-      <button className="flex  flex-col items-center justify-center">
+      </Link>
+      <Link to={"/user"} className="flex  flex-col items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="17"
@@ -51,8 +54,26 @@ const Footer = ({ type }) => {
           />
         </svg>
         <span className="text-[10px] font-semibold">Profile</span>
-      </button>
-      <button className="flex  flex-col items-center justify-center">
+      </Link>
+      <Link
+        to={"/bookings"}
+        className="flex  flex-col items-center justify-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="18"
+          viewBox="0 0 16 18"
+          fill="none"
+        >
+          <path
+            d="M1.08333 0H14.4167C14.8769 0 15.25 0.387889 15.25 0.866365V17.5667C15.25 17.806 15.0634 18 14.8333 18C14.7748 18 14.717 17.987 14.6636 17.9623L7.75 14.7553L0.836442 17.9623C0.626292 18.0598 0.379925 17.9617 0.286158 17.7433C0.262317 17.6876 0.25 17.6275 0.25 17.5667V0.866365C0.25 0.387889 0.6231 0 1.08333 0ZM7.75 9.9632L10.1991 11.3018L9.73133 8.46656L11.7128 6.45869L8.97458 6.04503L7.75 3.46546L6.52542 6.04503L3.78727 6.45869L5.76863 8.46656L5.30089 11.3018L7.75 9.9632Z"
+            fill="#9C9C9C"
+          />
+        </svg>
+        <span className="text-[10px] font-semibold">Bookings</span>
+      </Link>
+      <Link to={"/cart"} className="flex  flex-col items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"
@@ -66,23 +87,7 @@ const Footer = ({ type }) => {
           />
         </svg>
         <span className="text-[10px] font-semibold">Cart</span>
-      </button>
-      <button className="flex  flex-col items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="19"
-          viewBox="0 0 18 19"
-          fill="none"
-        >
-          <path
-            className="active:fill-[#DB040B]"
-            d="M18 17.997C18 18.5493 17.5523 18.997 17 18.997H1C0.44772 18.997 0 18.5493 0 17.997V7.31086C0 7.00468 0.14027 6.71537 0.38065 6.52574L8.3807 0.214882C8.7438 -0.0716275 9.2562 -0.0716275 9.6193 0.214882L17.6193 6.52574C17.8597 6.71537 18 7.00468 18 7.31086V17.997ZM4 9.99697C4 12.7584 6.23858 14.997 9 14.997C11.7614 14.997 14 12.7584 14 9.99697H12C12 11.6539 10.6569 12.997 9 12.997C7.3431 12.997 6 11.6539 6 9.99697H4Z"
-            fill="#9C9C9C"
-          />
-        </svg>
-        <span className="text-[10px] font-semibold">Home</span>
-      </button>
+      </Link>
     </footer>
   );
 };
