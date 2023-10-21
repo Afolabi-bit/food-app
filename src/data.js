@@ -14,6 +14,12 @@ import SpecialPizzaTwo from "./images/special-pizza-2.jpg";
 import KoreanBeef from "./images/korean-beef.jpg";
 import Burger from "./images/burger.jpg";
 import Food from "./images/food.jpg";
+import Bluesky from "./images/bluesky.jpg";
+import RedFrisken from "./images/red-frisken.jpg";
+import Pucci from "./images/pucci's-pizza.jpg";
+import Allure from "./images/allure-joint.jpg";
+import Ladies from "./images/ladies-joint.jpg";
+import FoodPalace from "./images/food-palace.jpg";
 
 const MenuList = [
   {
@@ -150,6 +156,39 @@ export const colors = [
   "rose-200",
   "amber-200",
   "emerald-200",
+];
+
+export const BookingList = [
+  {
+    name: "Bluesky Joint",
+    open: "Tues-Friday",
+    image: Bluesky,
+  },
+  {
+    name: "Red Frisken",
+    open: "Mon-Friday",
+    image: RedFrisken,
+  },
+  {
+    name: "Pucci's Pizza",
+    open: "Wed-Friday",
+    image: Pucci,
+  },
+  {
+    name: "Allure Joint",
+    open: "Tues-Friday",
+    image: Allure,
+  },
+  {
+    name: "Ladies Joint",
+    open: "Tues-Friday",
+    image: Ladies,
+  },
+  {
+    name: "Food Palace",
+    open: "Tues-Friday",
+    image: FoodPalace,
+  },
 ];
 
 export default MenuList;
