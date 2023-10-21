@@ -32,11 +32,11 @@ section.welcome {
     0px 8px 18px -6px rgba(24, 39, 75, 0.12);
 }
 
-.market footer button.active svg path {
+.market footer a.active svg path {
   fill: #db040b;
 }
 
-.market footer button.active span {
+.market footer a.active span {
   color: #db040b;
 }
 
