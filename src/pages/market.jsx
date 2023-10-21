@@ -5,13 +5,14 @@ import Hero from "../images/hero.png";
 import Add from "../images/add.svg";
 import FoodMenu from "../data";
 import { colors } from "../data";
+import Food from "../components/food";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
 const Market = () => {
   return (
     <main className="market  mt-[50px] mb-[90px] py-8 px-[24px]">
-      <Header />
+      <Header page={"home"} />
       <section className="center">
         <form className="w-full flex items-center relative mb-[30px]">
           <img
@@ -64,7 +65,7 @@ const Market = () => {
             </Link>
           </div>
           <div className="flex gap-x-[15px] justify-between">
-            {FoodMenu.slice(0, 2).map((f) => {
+            {FoodMenu.slice(7, 9).map((f) => {
               const { name, id, image, time } = f;
               return (
                 <Link to={`/menu/${name}`} key={id} className="w-[50%]">
@@ -94,29 +95,7 @@ const Market = () => {
           <h3 className="text-[16px] mb-[10px] font-semibold text-[#142A37]">
             Popular Menu
           </h3>
-          <div className="flex relative rounded-[10px] shadow-xl">
-            <div className={`bg-[#f3dddf] rounded-[10px]`}>
-              <img
-                className="w-[110%]"
-                src={FoodMenu[13].image}
-                alt={FoodMenu[13].name}
-              />
-            </div>
-            <div className="flex flex-col ml-3 ">
-              <h3 className="text-[#142A37] mt-2 text-[16px] font-semibold">
-                {FoodMenu[13].name}
-              </h3>
-              <p className="text-[#142A37] text-[10px] font-normal">
-                {FoodMenu[13].time}
-              </p>
-              <p className="text-[#142A37] mt-6 text-[16px] font-semibold">
-                {FoodMenu[13].price}
-              </p>
-            </div>
-            <button className="absolute text-white rounded-[5px] bottom-2 right-2 bg-[#DB040B] px-3 py-1">
-              Order
-            </button>
-          </div>
+          <Food food={FoodMenu[13]} />
         </article>
 
         {/*  See More Link */}

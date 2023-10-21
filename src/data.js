@@ -15,19 +15,7 @@ import KoreanBeef from "./images/korean-beef.png";
 import Burger from "./images/burger.jpg";
 import Food from "./images/food.jpg";
 
-const Menu = [
-  {
-    id: 1,
-    name: "Tomato Pizza",
-    time: "30mins",
-    image: TomatoPizza,
-  },
-  {
-    id: 2,
-    name: "Chicken Shawarma",
-    time: "15mins",
-    image: ChickenSharwarma,
-  },
+const MenuList = [
   {
     id: 3,
     name: "Rice & sauce",
@@ -78,6 +66,18 @@ const Menu = [
     price: "$30.00",
   },
   {
+    id: 1,
+    name: "Tomato Pizza",
+    time: "30mins",
+    image: TomatoPizza,
+  },
+  {
+    id: 2,
+    name: "Chicken Shawarma",
+    time: "15mins",
+    image: ChickenSharwarma,
+  },
+  {
     id: 10,
     name: "Special Combo",
     time: "1hr 30mins",
@@ -92,7 +92,7 @@ const Menu = [
     price: "$30.00",
   },
   {
-    id: 11,
+    id: 16,
     name: "Special Combo",
     time: "1hr 30mins",
     image: SpecialComboFour,
@@ -129,13 +129,11 @@ const Menu = [
 ];
 
 export const colors = [
-  "#000000",
-  "#faf3cb",
-  "#f7d9db",
-  "#fce59a",
-  "#e4b6d4",
-  "#e4b9b6",
-  "#c7b5b4",
+  "fuchsia-200",
+  "slate-200",
+  "rose-200",
+  "amber-200",
+  "emerald-200",
 ];
 
-export default Menu;
+export default MenuList;
