@@ -7,7 +7,7 @@ const Details = () => {
   const { name, image, time, price, info } = food;
   return (
     <main className="mt-[50px] relative">
-      <div className=" rounded-[24px] mb-7 mx-auto  h-[364px] shadow w-[345px] flex justify-center items-center">
+      <div className=" rounded-[24px] mb-7 mx-auto  h-[364px] shadow w-full flex justify-center items-center">
         <img
           className="w-full scale-[1.05] object-cover"
           src={image}
