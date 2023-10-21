@@ -160,31 +160,37 @@ export const colors = [
 
 export const BookingList = [
   {
+    id: 1,
     name: "Bluesky Joint",
     open: "Tues-Friday",
     image: Bluesky,
   },
   {
+    id: 2,
     name: "Red Frisken",
     open: "Mon-Friday",
     image: RedFrisken,
   },
   {
+    id: 3,
     name: "Pucci's Pizza",
     open: "Wed-Friday",
     image: Pucci,
   },
   {
+    id: 4,
     name: "Allure Joint",
     open: "Tues-Friday",
     image: Allure,
   },
   {
+    id: 5,
     name: "Ladies Joint",
     open: "Tues-Friday",
     image: Ladies,
   },
   {
+    id: 6,
     name: "Food Palace",
     open: "Tues-Friday",
     image: FoodPalace,

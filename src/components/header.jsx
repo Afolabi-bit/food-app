@@ -25,6 +25,11 @@ const Header = ({ page }) => {
           Popular Menu
         </h1>
       )}
+      {page == "bookings" && (
+        <h1 className="font-semibold  text-[#142A37] text-base">
+          Popular Restaurant
+        </h1>
+      )}
       <button>
         <img src={Bell} alt="Notifications" className="" />
       </button>

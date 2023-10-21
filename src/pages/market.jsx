@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Menu from "../images/menu-add-fill.svg";
-import MagGlass from "../images/search-line.svg";
 import Hero from "../images/hero.png";
 import Add from "../images/add.svg";
 import FoodMenu from "../data";
@@ -10,6 +8,7 @@ import Footer from "../components/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { SearchForm } from "../components/utils";
 
 const Market = () => {
   useEffect(() => {
@@ -17,27 +16,12 @@ const Market = () => {
   }, []);
   return (
     <main
-      className="market  mt-[50px] mb-[90px] py-8 px-[24px]"
+      className="market  pt-[100px] mb-[90px] py-8 px-[24px]"
       data-aos="zoom-out"
     >
       <Header page={"home"} />
+      <SearchForm />
       <section className="center">
-        <form className="w-full flex items-center relative mb-[30px]">
-          <img
-            src={MagGlass}
-            className="absolute top-[50%] translate-y-[-50%] left-[12px]"
-            alt=""
-          />
-          <input
-            type="text"
-            placeholder="Search meal"
-            className="bg-[#F5F5F5] h-[52px] rounded-[10px] pl-11 w-full"
-          />
-          <button className="h-[33px] w-[44px] px-[10px]">
-            <img src={Menu} size={"24px"} alt="" />
-          </button>
-        </form>
-
         {/* Hero */}
 
         <article className="hero mb-[30px] flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
