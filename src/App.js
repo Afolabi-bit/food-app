@@ -18,6 +18,7 @@ import Login from "./pages/Login";
 import Market from "./pages/market";
 import Welcome from "./pages/WelcomePage";
 import Menu from "./pages/menu";
+import Details from "./pages/details";
 
 /* if (!process.env.REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key");
@@ -61,6 +62,7 @@ const ClerkProviderWithRoutes = () => {
           }
         ></Route>
         <Route exact path="/menu" element={<Menu />}></Route>
+        <Route exact path="/menu/:name" element={<Details />}></Route>
       </Routes>
     </ClerkProvider>
   );

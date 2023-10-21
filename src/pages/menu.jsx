@@ -8,7 +8,7 @@ const Menu = () => {
       <Header page={"menu"} />
       <section className="w-full">
         {MenuList.map((food, index) => {
-          return <Food key={"id"} food={food} />;
+          return <Food key={food.id} food={food} />;
         })}
       </section>
       <div className="w-full h- fixed left-[0] py-[28px]  bg-white z-10 bottom-0 px-[24px]">

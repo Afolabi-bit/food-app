@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { colors } from "../data";
 
 const Food = ({ food }) => {
@@ -19,9 +20,12 @@ const Food = ({ food }) => {
           {price}
         </p>
       </div>
-      <button className="absolute h-[21px] w-[53px] text-[10px] text-white rounded-[5px] bottom-2 right-2 bg-[#DB040B] center">
+      <Link
+        to={`/menu/${name}`}
+        className="absolute h-[21px] w-[53px] text-[10px] text-white rounded-[5px] bottom-2 right-2 bg-[#DB040B] flex justify-center items-center"
+      >
         Order
-      </button>
+      </Link>
     </article>
   );
 };
