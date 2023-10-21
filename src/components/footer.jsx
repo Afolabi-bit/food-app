@@ -4,7 +4,7 @@ const Footer = ({ type }) => {
   return (
     <footer className="fixed bg-white px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
       <Link
-        to={"/"}
+        to={"/market"}
         className={
           type == "home"
             ? "active flex  flex-col items-center justify-center"
@@ -25,7 +25,14 @@ const Footer = ({ type }) => {
         </svg>
         <span className="text-[10px] font-semibold">Home</span>
       </Link>
-      <Link className="flex  flex-col items-center justify-center">
+      <Link
+        to={"/notifications"}
+        className={
+          type == "notifications"
+            ? "active flex  flex-col items-center justify-center"
+            : "flex  flex-col items-center justify-center"
+        }
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="21"

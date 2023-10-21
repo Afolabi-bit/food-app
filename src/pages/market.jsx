@@ -4,14 +4,22 @@ import MagGlass from "../images/search-line.svg";
 import Hero from "../images/hero.png";
 import Add from "../images/add.svg";
 import FoodMenu from "../data";
-import { colors } from "../data";
 import Food from "../components/food";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Market = () => {
+  useEffect(() => {
+    AOS.init({ duration: 500, offset: 0, once: true });
+  }, []);
   return (
-    <main className="market  mt-[50px] mb-[90px] py-8 px-[24px]">
+    <main
+      className="market  mt-[50px] mb-[90px] py-8 px-[24px]"
+      data-aos="zoom-out"
+    >
       <Header page={"home"} />
       <section className="center">
         <form className="w-full flex items-center relative mb-[30px]">
