@@ -62,7 +62,7 @@ const ClerkProviderWithRoutes = () => {
           }
         ></Route>
         <Route exact path="/menu" element={<Menu />}></Route>
-        <Route exact path="/menu/:name" element={<Details />}></Route>
+        <Route exact path="/menu/:id" element={<Details />}></Route>
       </Routes>
     </ClerkProvider>
   );

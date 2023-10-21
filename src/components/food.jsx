@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { colors } from "../data";
 
 const Food = ({ food }) => {
-  const { name, image, time, price } = food;
+  const { id, name, image, time, price } = food;
   let color = colors[Math.floor(Math.random * colors.length)];
   return (
     <article className="mb-3 relative w-full h-[97px] flex shadow-lg rounded-[10px]">
@@ -21,7 +21,7 @@ const Food = ({ food }) => {
         </p>
       </div>
       <Link
-        to={`/menu/${name}`}
+        to={`/menu/${food.id}`}
         className="absolute h-[21px] w-[53px] text-[10px] text-white rounded-[5px] bottom-2 right-2 bg-[#DB040B] flex justify-center items-center"
       >
         Order

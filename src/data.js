@@ -22,6 +22,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: RiceAndSauce,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 4,
@@ -29,6 +30,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: Sandwich,
     price: "$40.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 5,
@@ -36,6 +38,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: FullChicken,
     price: "$23.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 6,
@@ -43,6 +46,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialCombo,
     price: "$15.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 7,
@@ -50,6 +54,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialPizza,
     price: "$35.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 8,
@@ -57,6 +62,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialPancake,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 9,
@@ -64,18 +70,21 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialPizzaTwo,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 1,
     name: "Tomato Pizza",
     time: "30mins",
     image: TomatoPizza,
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 2,
     name: "Chicken Shawarma",
     time: "15mins",
     image: ChickenSharwarma,
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 10,
@@ -83,6 +92,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialComboThree,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 11,
@@ -90,6 +100,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: KoreanBeef,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
     id: 16,
@@ -97,6 +108,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialComboFour,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque",
   },
   {
     id: 12,
@@ -104,6 +116,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialComboTwo,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque",
   },
   {
     id: 13,
@@ -111,6 +124,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: ChickenSalad,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque",
   },
   {
     id: 14,
@@ -118,6 +132,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: Burger,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque",
   },
   {
     id: 15,
@@ -125,6 +140,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: Food,
     price: "$30.00",
+    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque",
   },
 ];
 
