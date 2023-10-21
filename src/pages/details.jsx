@@ -6,7 +6,7 @@ const Details = () => {
   let food = MenuList.find((food) => food.id == id);
   const { name, image, time, price, info } = food;
   return (
-    <main className="mt-[50px] relative">
+    <main className="mt-[50px]  px-7 relative">
       <div className=" rounded-[24px] mb-7 mx-auto  h-[364px] shadow w-full flex justify-center items-center">
         <img
           className="w-full scale-[1.05] object-cover"
@@ -14,7 +14,7 @@ const Details = () => {
           alt={name}
         />
       </div>
-      <div className=" px-7">
+      <div className="">
         <div className="flex justify-between items-start mb-3">
           <div>
             <h1 className="text-[#142A37] text-[20px] font-bold">{name}</h1>
