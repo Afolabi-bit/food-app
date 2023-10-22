@@ -10,9 +10,6 @@ const Cart = () => {
   let { cart } = useGlobalContext();
   cart = [...new Set(cart)];
 
-  const removeFromCart = (id) => {
-    cart.filter((item) => item != id);
-  };
   return (
     <main className="px-7 pt-[100px]">
       <header className="py-5 px-7 bg-white w-full fixed top-0 left-0">
@@ -47,7 +44,7 @@ const Cart = () => {
         {cart.map((id) => {
           let food = MenuList.find((item) => item.id == id);
 
-          return <CartItem food={food} remove={removeFromCart} />;
+          return <CartItem food={food} />;
         })}
       </article>
       <Footer type={"cart"} />
