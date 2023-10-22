@@ -11,7 +11,7 @@ const ProfilePage = () => {
     AOS.init({ duration: 500, offset: 0, once: true });
   }, []);
   return (
-    <main>
+    <main className="pb-[100px]">
       <article data-aos="zoom-out">
         <UserProfile />
       </article>
