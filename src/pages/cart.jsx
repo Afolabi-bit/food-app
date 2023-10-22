@@ -2,12 +2,19 @@ import Footer from "../components/footer";
 import { SearchForm } from "../components/utils";
 import useGlobalContext from "../context";
 import { FaMagnifyingGlass, FaArrowLeft } from "react-icons/fa6";
+import MenuList from "../data";
+import CartItem from "../components/cartitem";
 
 const Cart = () => {
   const { hitSearch, setHitSearch } = useGlobalContext();
+  let { cart } = useGlobalContext();
+  cart = [...new Set(cart)];
 
+  const removeFromCart = (id) => {
+    cart.filter((item) => item != id);
+  };
   return (
-    <main className="px-7 pt-[60px]">
+    <main className="px-7 pt-[100px]">
       <header className="py-5 px-7 bg-white w-full fixed top-0 left-0">
         <div className="flex justify-between items-center">
           {hitSearch || (
@@ -36,6 +43,13 @@ const Cart = () => {
         </div>
       </header>
       {hitSearch && <SearchForm />}
+      <article>
+        {cart.map((id) => {
+          let food = MenuList.find((item) => item.id == id);
+
+          return <CartItem food={food} remove={removeFromCart} />;
+        })}
+      </article>
       <Footer type={"cart"} />
     </main>
   );
