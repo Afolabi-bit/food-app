@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import MenuList from "../data";
 import useGlobalContext from "../context";
 
@@ -32,12 +32,13 @@ const Details = () => {
       </div>
 
       <div className="w-full h- fixed left-[0] py-[28px]  bg-white z-10 bottom-0 px-[24px]">
-        <button
+        <Link
+          to={"/cart"}
           onClick={() => setCart([id, ...cart])}
-          className=" w-full rounded-[10px] bg-[#25401D] py-[15px] text-white text-base font-medium"
+          className=" w-full block flex justify-center rounded-[10px] bg-[#25401D] py-[15px] text-white text-base font-medium"
         >
           Buy Now
-        </button>
+        </Link>
       </div>
     </main>
   );

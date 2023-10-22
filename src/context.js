@@ -6,7 +6,6 @@ export const AppProvider = ({ children }) => {
   const [trigger, setTrigger] = useState(false);
   const [hitSearch, setHitSearch] = useState(false);
   const [cart, setCart] = useState([]);
-  console.log(cart);
   return (
     <AppContext.Provider
       value={{

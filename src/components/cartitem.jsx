@@ -1,8 +1,14 @@
 import useGlobalContext from "../context";
 
 const CartItem = ({ food }) => {
-  const { image, name, price } = food;
+  const { image, name, price, id } = food;
+  const { cart, setCart } = useGlobalContext();
 
+  function removeFromCart(arg) {
+    setCart(cart.filter((item) => item.id != arg));
+    console.log("working");
+    return;
+  }
   return (
     <article className="flex relative p-[3px] w-full rounded-[10px] shadow mb-5">
       <img
@@ -14,7 +20,10 @@ const CartItem = ({ food }) => {
         <h2 className="text-base font-medium">{name}</h2>
         <p className="text-[#142A37] text-base font-bold">{price}</p>
       </div>
-      <button className="absolute top-[12px] right-[11px]">
+      <button
+        onClick={removeFromCart(id)}
+        className="absolute top-[12px] right-[11px]"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
