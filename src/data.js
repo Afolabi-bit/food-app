@@ -28,6 +28,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: RiceAndSauce,
     price: "$30.00",
+    bg: "red-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -36,6 +37,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: Sandwich,
     price: "$40.00",
+    bg: "emerald-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -44,6 +46,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: FullChicken,
     price: "$23.00",
+    bg: "orange-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -52,6 +55,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialCombo,
     price: "$15.00",
+    bg: "slate-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -60,6 +64,7 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialPizza,
     price: "$35.00",
+    bg: "zinc-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {

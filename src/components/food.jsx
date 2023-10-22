@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
-import { colors } from "../data";
 
 const Food = ({ food }) => {
-  const { id, name, image, time, price } = food;
-  let color = colors[Math.floor(Math.random * colors.length)];
+  const { bg, name, image, time, price } = food;
   return (
     <article className="mb-3 relative w-full h-[97px] flex shadow-lg rounded-[10px]">
-      <div className={`rounded-[10px] bg-${color} w-[113px] h-[90px] `}>
+      <div
+        className={
+          bg
+            ? `rounded-[10px] bg-${bg} w-[113px] h-[90px] `
+            : `rounded-[10px]  w-[113px] h-[90px] `
+        }
+      >
         <img
           className="w-full h-full rounded-[10px]  object-cover object-center"
           src={image}

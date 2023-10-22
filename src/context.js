@@ -5,6 +5,7 @@ export const AppContext = createContext();
 export const AppProvider = ({ children }) => {
   const [trigger, setTrigger] = useState(false);
   const [hitSearch, setHitSearch] = useState(false);
+  const [cart, setCart] = useState([]);
 
   return (
     <AppContext.Provider
@@ -13,6 +14,8 @@ export const AppProvider = ({ children }) => {
         setTrigger,
         hitSearch,
         setHitSearch,
+        cart,
+        setCart,
       }}
     >
       {children}

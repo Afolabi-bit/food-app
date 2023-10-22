@@ -7,7 +7,7 @@ const Menu = () => {
     <main className="mt-[50px] mb-[98px] py-8 px-[24px]">
       <Header page={"menu"} />
       <section className="w-full">
-        {MenuList.map((food, index) => {
+        {MenuList.map((food) => {
           return <Food key={food.id} food={food} />;
         })}
       </section>
