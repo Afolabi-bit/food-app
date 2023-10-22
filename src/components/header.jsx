@@ -1,5 +1,6 @@
 import { UserButton, useUser } from "@clerk/clerk-react";
 import Bell from "../images/notification-svg.svg";
+import { Link } from "react-router-dom";
 
 const Header = ({ page }) => {
   const { user } = useUser();
@@ -30,9 +31,9 @@ const Header = ({ page }) => {
           Popular Restaurant
         </h1>
       )}
-      <button>
+      <Link to={"/notifications"}>
         <img src={Bell} alt="Notifications" className="" />
-      </button>
+      </Link>
     </header>
   );
 };
