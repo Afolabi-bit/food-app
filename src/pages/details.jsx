@@ -31,11 +31,11 @@ const Details = () => {
         <p className="text-[#142A37] text-base font-normal">{info}</p>
       </div>
 
-      <div className="w-full h- fixed left-[0] py-[28px]  bg-white z-10 bottom-0 px-[24px]">
+      <div className="w-full  fixed left-[0] py-[28px]  bg-white z-10 bottom-0 px-[24px]">
         <Link
-          to={"/cart"}
+          to={"/market"}
           onClick={() => setCart([id, ...cart])}
-          className=" w-full block flex justify-center rounded-[10px] bg-[#25401D] py-[15px] text-white text-base font-medium"
+          className=" w-full  flex justify-center rounded-[10px] bg-[#25401D] py-[15px] text-white text-base font-medium"
         >
           Buy Now
         </Link>
