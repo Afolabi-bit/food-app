@@ -41,7 +41,7 @@ const Cart = () => {
       </header>
       {cart.length < 1 && (
         <section className="absolute top-1/2 left-1/2 translate-x-[-50%] tray flex justify-center items-center">
-          <h3 className="text-lg font-semibold">Cart is empty</h3>
+          <h3 className="text-lg font-semibold">Your cart is empty</h3>
         </section>
       )}
       {cart.length > 0 && (
