@@ -5,9 +5,8 @@ const CartItem = ({ food }) => {
   const { cart, setCart } = useGlobalContext();
 
   function removeFromCart(arg) {
-    setCart(cart.filter((item) => item.id != arg));
-    console.log("working");
-    return;
+    let newCart = cart.filter((item) => +item.id !== +arg);
+    setCart(newCart);
   }
   return (
     <article className="flex relative p-[3px] w-full rounded-[10px] shadow mb-5">
@@ -21,7 +20,7 @@ const CartItem = ({ food }) => {
         <p className="text-[#142A37] text-base font-bold">{price}</p>
       </div>
       <button
-        onClick={removeFromCart(id)}
+        onClick={() => removeFromCart(id)}
         className="absolute top-[12px] right-[11px]"
       >
         <svg

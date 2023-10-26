@@ -42,9 +42,8 @@ const Cart = () => {
       {hitSearch && <SearchForm />}
       <article>
         {cart.map((id) => {
-          let food = MenuList.find((item) => item.id == id);
-
-          return <CartItem food={food} />;
+          let food = MenuList.find((item) => +item.id === +id);
+          return <CartItem food={food} key={id} />;
         })}
       </article>
       <Footer type={"cart"} />

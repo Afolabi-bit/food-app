@@ -57,7 +57,7 @@ const Market = () => {
             {FoodMenu.slice(7, 9).map((f) => {
               const { name, id, image, time } = f;
               return (
-                <Link to={`/menu/${name}`} key={id} className="w-[50%]">
+                <Link to={`/menu/${id}`} key={id} className="w-[50%]">
                   <img className="h-[103px] w-[100%] mb-2" src={image} alt="" />
                   <div className="flex justify-between mt-1">
                     <div className="flex-col ">

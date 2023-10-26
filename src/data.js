@@ -88,6 +88,7 @@ const MenuList = [
     name: "Tomato Pizza",
     time: "30mins",
     image: TomatoPizza,
+    price: "$30.00",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -95,6 +96,7 @@ const MenuList = [
     name: "Chicken Shawarma",
     time: "15mins",
     image: ChickenSharwarma,
+    price: "$30.00",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
