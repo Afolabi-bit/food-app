@@ -5,7 +5,9 @@ const CartItem = ({ food }) => {
   const { cart, setCart } = useGlobalContext();
 
   function removeFromCart(arg) {
-    let newCart = cart.filter((item) => +item.id !== +arg);
+    /* 
+    const order = cart.find((item) => +item === +arg); */
+    const newCart = cart.filter((item) => +item !== arg);
     setCart(newCart);
   }
   return (

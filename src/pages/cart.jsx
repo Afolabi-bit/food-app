@@ -39,13 +39,22 @@ const Cart = () => {
           </svg>
         </div>
       </header>
-      {hitSearch && <SearchForm />}
-      <article>
-        {cart.map((id) => {
-          let food = MenuList.find((item) => +item.id === +id);
-          return <CartItem food={food} key={id} />;
-        })}
-      </article>
+      {cart.length < 1 && (
+        <section className="absolute top-1/2 left-1/2 translate-x-[-50%] tray flex justify-center items-center">
+          <h3 className="text-lg font-semibold">Cart is empty</h3>
+        </section>
+      )}
+      {cart.length > 0 && (
+        <section>
+          {hitSearch && <SearchForm />}
+          <article>
+            {cart.map((id) => {
+              let food = MenuList.find((item) => +item.id === +id);
+              return <CartItem food={food} key={id} />;
+            })}
+          </article>
+        </section>
+      )}
       <Footer type={"cart"} />
     </main>
   );
