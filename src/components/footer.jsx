@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import useGlobalContext from "../context";
 
 const Footer = ({ type }) => {
+  const { cart, showCartCount, setShowCartCount } = useGlobalContext();
   return (
     <footer className="fixed bg-white px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
       <Link
@@ -95,10 +97,20 @@ const Footer = ({ type }) => {
         to={"/cart"}
         className={
           type == "cart"
-            ? "active flex  flex-col items-center justify-center"
-            : "flex  flex-col items-center justify-center"
+            ? "active flex relative  flex-col items-center justify-center"
+            : "flex relative  flex-col items-center justify-center"
         }
+        onClick={() => {
+          setShowCartCount(false);
+        }}
       >
+        {showCartCount && cart.length > 0 && type !== "cart" && (
+          <div className="bg-[#db040b] absolute w-5 h-5 top-[-8px] flex justify-center items-center right-[-7px] rounded-[100%]">
+            <span className="  text-white text-[10px] translate-y-[1px] z-10">
+              {cart.length}
+            </span>
+          </div>
+        )}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="22"

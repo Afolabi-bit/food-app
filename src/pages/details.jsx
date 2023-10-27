@@ -6,7 +6,7 @@ const Details = () => {
   const { id } = useParams();
   let food = MenuList.find((food) => food.id === +id);
   const { name, image, time, price, info } = food;
-  const { cart, setCart } = useGlobalContext();
+  const { cart, setShowCartCount, setCart } = useGlobalContext();
   return (
     <main className="mt-[50px]  px-7 relative">
       <div className=" rounded-[24px] mb-7 mx-auto overflow-hidden  h-[364px] shadow w-full flex justify-center items-center">
@@ -34,7 +34,10 @@ const Details = () => {
       <div className="w-full  fixed left-[0] py-[28px]  bg-white z-10 bottom-0 px-[24px]">
         <Link
           to={"/market"}
-          onClick={() => setCart([+id, ...cart])}
+          onClick={() => {
+            setCart([+id, ...cart]);
+            setShowCartCount(true);
+          }}
           className=" w-full  flex justify-center rounded-[10px] bg-[#25401D] py-[15px] text-white text-base font-medium"
         >
           Buy Now
