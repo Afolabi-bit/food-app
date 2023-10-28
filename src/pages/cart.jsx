@@ -5,15 +5,15 @@ import { FaMagnifyingGlass, FaArrowLeft } from "react-icons/fa6";
 import MenuList from "../data";
 import CartItem from "../components/cartitem";
 import { Link } from "react-router-dom";
+import { colors } from "../data";
 
 const Cart = () => {
   const { hitSearch, setHitSearch } = useGlobalContext();
   let { cart } = useGlobalContext();
   cart = [...new Set(cart)];
-
   return (
-    <main className="px-2 pt-[100px]">
-      <header className="py-5 px-3 bg-white w-full fixed top-0 left-0">
+    <main className="px-2 pb-[75px] pt-[100px]">
+      <header className="py-5 z-10 px-3 shadow bg-white w-full fixed top-0 left-0">
         <div className="flex justify-between items-center">
           {hitSearch || (
             <button onClick={() => setHitSearch(!hitSearch)}>
@@ -56,8 +56,9 @@ const Cart = () => {
           {hitSearch && <SearchForm />}
           <article>
             {cart.map((id) => {
+              let ind = Math.floor(Math.random() * cart.length);
               let food = MenuList.find((item) => +item.id === +id);
-              return <CartItem food={food} key={id} />;
+              return <CartItem food={food} key={id} bg={colors[ind]} />;
             })}
           </article>
         </section>

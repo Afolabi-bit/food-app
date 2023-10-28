@@ -8,8 +8,11 @@ const Details = () => {
   const { name, image, time, price, info } = food;
   const { cart, setShowCartCount, setCart } = useGlobalContext();
   return (
-    <main className="mt-[50px]  px-7 relative">
-      <div className=" rounded-[24px] mb-7 mx-auto overflow-hidden  h-[364px] shadow w-full flex justify-center items-center">
+    <main className="mt-[50px] pb-[70px]  px-3 relative">
+      <div
+        className=" rounded-[24px] mb-7 mx-auto overflow-hidden  h-[364px] shadow w-full flex justify-center items-center"
+        style={{ backgroundColor: "rgba(252,230,157,0.93)" }}
+      >
         <img
           className="w-full h-full rounded-[24px] object-cover"
           src={image}

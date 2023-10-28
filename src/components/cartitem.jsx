@@ -1,22 +1,22 @@
 import useGlobalContext from "../context";
 
-const CartItem = ({ food }) => {
+const CartItem = ({ food, bg }) => {
   const { image, name, price, id } = food;
   const { cart, setCart } = useGlobalContext();
 
   function removeFromCart(arg) {
-    /* 
-    const order = cart.find((item) => +item === +arg); */
     const newCart = cart.filter((item) => +item !== arg);
     setCart(newCart);
   }
   return (
     <article className="flex relative p-[3px] w-full rounded-[10px] shadow mb-5">
-      <img
-        className="w-[92px] h-[90px] object-cover rounded-[10px]"
-        src={image}
-        alt={name}
-      />
+      <div className="rounded-[10px]" style={{ backgroundColor: `${bg}` }}>
+        <img
+          className="w-[92px] h-[90px] object-cover rounded-[10px]"
+          src={image}
+          alt={name}
+        />
+      </div>
       <div className="ml-2 pt-2">
         <h2 className="text-base font-medium">{name}</h2>
         <p className="text-[#142A37] text-base font-bold">{price}</p>
