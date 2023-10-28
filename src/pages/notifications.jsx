@@ -5,12 +5,11 @@ const Notifications = () => {
   return (
     <main>
       <header className="flex items-center justify-between py-5 px-7 bg-white w-full fixed top-0 left-0 ">
-        <div className="image  ">
-          <UserButton />
-        </div>
-        <h1 className="justify-self-center">Notifications</h1>
+        <UserButton />
+        <h1 className="translate-y-1 text-[#142A37] text-base font-semibold mb-4">
+          Notifications
+        </h1>
         <svg
-          className="justify-self-end"
           xmlns="http://www.w3.org/2000/svg"
           width="21"
           height="21"
