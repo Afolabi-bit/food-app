@@ -12,7 +12,7 @@ const ProfilePage = () => {
   }, []);
   return (
     <main className="pb-[100px] px-4 pt-4">
-      <article data-aos="zoom-out">
+      <article data-aos="zoom-out" className="w-full overflow-hidden ">
         <UserProfile />
       </article>
       <Footer type={"profile"} />

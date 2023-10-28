@@ -15,22 +15,26 @@ const Market = () => {
     AOS.init({ duration: 500, offset: 0, once: true });
   }, []);
   return (
-    <main className="pt-[100px] relative px-[24px] pb-[120px] ">
+    <main className="pt-[100px] relative px-[15px] pb-[120px] ">
       <Header page={"home"} />
       <SearchForm />
       <section data-aos="zoom-out" className="center">
         {/* Hero */}
 
-        <article className="hero mb-[30px] flex h-[148px] bg-[#25401D] rounded-[10px] w-full">
+        <article className="hero mb-[30px] flex justify-between h-[148px] bg-[#25401D] rounded-[10px] w-full">
           <div className="text pt-[20px] w-[50%] pl-[20px] text-white">
-            <h1 className="text-[20px]  font-semibold mb-[18px]">
+            <h1 className="text-[18px]  font-semibold mb-[18px]">
               Always ready for you
             </h1>
-            <button className="bg-white text-[#25401D] text-[10px] font-semibold px-[13px] py-[8px] rounded-[5px]">
+            <Link
+              to={"/menu"}
+              className="bg-white text-[#25401D] text-[10px] font-semibold px-[13px] py-[8px] rounded-[5px]"
+            >
               Buy Now
-            </button>
+            </Link>
           </div>
-          <div className="img w-[50%] flex items-end ">
+
+          <div className="img w-[45%] flex items-end ">
             <img
               src={Hero}
               className="w-full h-[120px] object-cover object-left  translate-y-2 shadow-sm  "

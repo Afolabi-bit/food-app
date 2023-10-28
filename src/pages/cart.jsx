@@ -4,6 +4,7 @@ import useGlobalContext from "../context";
 import { FaMagnifyingGlass, FaArrowLeft } from "react-icons/fa6";
 import MenuList from "../data";
 import CartItem from "../components/cartitem";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const { hitSearch, setHitSearch } = useGlobalContext();
@@ -40,8 +41,14 @@ const Cart = () => {
         </div>
       </header>
       {cart.length < 1 && (
-        <section className="absolute top-1/2 left-1/2 translate-x-[-50%] tray flex justify-center items-center">
+        <section className="absolute top-1/2 left-1/2 translate-x-[-50%] tray flex flex-col justify-center items-center">
           <h3 className="text-lg font-semibold">Your cart is empty</h3>
+          <Link
+            className="bg-[#DB040B] text-white py-1 px-3 rounded-[5px] mt-1"
+            to={"/menu"}
+          >
+            View Menu
+          </Link>
         </section>
       )}
       {cart.length > 0 && (
