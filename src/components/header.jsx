@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = ({ page }) => {
   const { user } = useUser();
   return (
-    <header className="fixed bg-white w-full h-[70px] z-10 top-0 left-0 flex justify-between items-center px-[15px]">
+    <header className="fixed bg-white w-[100vw] overflow-hidden h-[70px] z-10 top-0 left-0 flex justify-between items-center px-[15px]">
       <div className="user flex ">
         <div className="image  ">
           <UserButton />
@@ -21,12 +21,12 @@ const Header = ({ page }) => {
           </div>
         )}
       </div>
-      {page == "menu" && (
+      {page === "menu" && (
         <h1 className="font-semibold  text-[#142A37] text-base">
           Popular Menu
         </h1>
       )}
-      {page == "bookings" && (
+      {page === "bookings" && (
         <h1 className="font-semibold  text-[#142A37] text-base">
           Popular Restaurant
         </h1>
