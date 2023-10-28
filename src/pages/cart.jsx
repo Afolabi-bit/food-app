@@ -44,7 +44,7 @@ const Cart = () => {
         <section className="absolute top-1/2 left-1/2 translate-x-[-50%] tray flex flex-col justify-center items-center">
           <h3 className="text-lg font-semibold">Your cart is empty</h3>
           <Link
-            className="bg-[#DB040B] text-white py-1 px-3 rounded-[5px] mt-1"
+            className="bg-[#DB040B] text-[11px] text-white py-1 px-3 rounded-[5px] mt-1"
             to={"/menu"}
           >
             View Menu
