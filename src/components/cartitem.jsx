@@ -17,7 +17,7 @@ const CartItem = ({ food }) => {
         src={image}
         alt={name}
       />
-      <div className="ml-5 pt-2">
+      <div className="ml-2 pt-2">
         <h2 className="text-base font-medium">{name}</h2>
         <p className="text-[#142A37] text-base font-bold">{price}</p>
       </div>

@@ -12,8 +12,8 @@ const Cart = () => {
   cart = [...new Set(cart)];
 
   return (
-    <main className="px-7 pt-[100px]">
-      <header className="py-5 px-7 bg-white w-full fixed top-0 left-0">
+    <main className="px-2 pt-[100px]">
+      <header className="py-5 px-3 bg-white w-full fixed top-0 left-0">
         <div className="flex justify-between items-center">
           {hitSearch || (
             <button onClick={() => setHitSearch(!hitSearch)}>
