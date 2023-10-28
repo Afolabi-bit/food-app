@@ -1,14 +1,14 @@
 import TomatoPizza from "./images/tomato-pizza.jpg";
 import ChickenSharwarma from "./images/chicken-shawarma.jpg";
-import RiceAndSauce from "./images/rice-and-sauce.jpg";
-import Sandwich from "./images/sandwich.jpg";
-import FullChicken from "./images/full-chicken.jpg";
-import SpecialCombo from "./images/special-combo.jpg";
+import RiceAndSauce from "./images/rice-and-sauce-2.png";
+import Sandwich from "./images/sandwich-2.png";
+import FullChicken from "./images/full-chicken-2.png";
+import SpecialCombo from "./images/special-combo-2.png";
 import SpecialComboTwo from "./images/special-combo-2.jpg";
 import SpecialComboThree from "./images/special-combo-3.jpg";
 import SpecialComboFour from "./images/special-combo-4.jpg";
-import ChickenSalad from "./images/chicken-salad.jpg";
-import SpecialPizza from "./images/special-pizza.jpg";
+import ChickenSalad from "./images/chicken-salad-2.png";
+import SpecialPizza from "./images/special-pizza.png";
 import SpecialPancake from "./images/special-pancake.jpg";
 import SpecialPizzaTwo from "./images/special-pizza-2.jpg";
 import KoreanBeef from "./images/korean-beef.jpg";
@@ -28,7 +28,6 @@ const MenuList = [
     time: "1hr 30mins",
     image: RiceAndSauce,
     price: "$30.00",
-    bg: "red-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -37,7 +36,6 @@ const MenuList = [
     time: "1hr 30mins",
     image: Sandwich,
     price: "$40.00",
-    bg: "emerald-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -46,7 +44,6 @@ const MenuList = [
     time: "1hr 30mins",
     image: FullChicken,
     price: "$23.00",
-    bg: "orange-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -64,7 +61,6 @@ const MenuList = [
     time: "1hr 30mins",
     image: SpecialPizza,
     price: "$35.00",
-    bg: "zinc-200",
     info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam porro sequi excepturi consectetur sit dignissimos quia, atque ducimus numquam neque.",
   },
   {
@@ -158,11 +154,11 @@ const MenuList = [
 ];
 
 export const colors = [
-  "fuchsia-200",
-  "slate-200",
-  "rose-200",
-  "amber-200",
-  "emerald-200",
+  "rgba(232,243,250,0.8)",
+  "rgba(250,235,220,0.8)",
+  "rgba(225,250,204,0.7)",
+  "rgba(218,199,250,0.7)",
+  "rgba(247,209,209,0.7)",
 ];
 
 export const BookingList = [

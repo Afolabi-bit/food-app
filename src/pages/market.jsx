@@ -88,7 +88,7 @@ const Market = () => {
           <h3 className="text-[16px] mb-[10px] font-semibold text-[#142A37]">
             Popular Menu
           </h3>
-          <Food food={FoodMenu[13]} />
+          <Food food={FoodMenu[13]} bg={"rgba(250,235,220,1)"} />
         </article>
 
         {/*  See More Link */}

@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import MenuList from "../data";
 import Food from "../components/food";
+import { colors } from "../data";
 
 const Menu = () => {
   return (
@@ -8,7 +9,8 @@ const Menu = () => {
       <Header page={"menu"} />
       <section className="w-full">
         {MenuList.map((food) => {
-          return <Food key={food.id} food={food} />;
+          let ind = Math.floor(Math.random() * colors.length);
+          return <Food key={food.id} food={food} bg={colors[ind]} />;
         })}
       </section>
       <div className="w-full h- fixed left-[0] py-[28px]  bg-white z-10 bottom-0 px-[24px]">

@@ -1,18 +1,15 @@
 import { Link } from "react-router-dom";
 
-const Food = ({ food }) => {
-  const { bg, name, image, time, price } = food;
+const Food = ({ food, bg }) => {
+  const { name, image, time, price } = food;
   return (
     <article className="mb-3 relative w-full h-[97px] flex shadow-lg rounded-[10px]">
       <div
-        className={
-          bg
-            ? `rounded-[10px] bg-${bg} w-[113px] h-[90px] `
-            : `rounded-[10px]  w-[113px] h-[90px] `
-        }
+        className={`rounded-[10px] w-[113px] flex justify-center items-center h-[90px] `}
+        style={{ backgroundColor: `${bg}` }}
       >
         <img
-          className="w-full h-full rounded-[10px]  object-cover object-center"
+          className="w-full h-full  rounded-[10px]  object-cover object-center"
           src={image}
           alt={name}
         />
