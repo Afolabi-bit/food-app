@@ -5,7 +5,7 @@ const Footer = ({ type }) => {
   let { cart, showCartCount, setShowCartCount } = useGlobalContext();
   cart = [...new Set(cart)];
   return (
-    <footer className="fixed bg-white px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
+    <footer className="fixed bg-white overflow-hidden px-5 bottom-0 left-0 w-full h-[79px] shadow-inner flex justify-between items-center">
       <Link
         to={"/market"}
         className={
