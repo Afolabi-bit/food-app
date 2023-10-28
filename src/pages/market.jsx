@@ -15,7 +15,7 @@ const Market = () => {
     AOS.init({ duration: 500, offset: 0, once: true });
   }, []);
   return (
-    <main className="pt-[100px] relative px-[15px] pb-[120px] ">
+    <main className="pt-[100px] overflow-hidden w-[100vw] relative px-[15px] pb-[120px] ">
       <Header page={"home"} />
       <SearchForm />
       <section data-aos="zoom-out" className="center">
