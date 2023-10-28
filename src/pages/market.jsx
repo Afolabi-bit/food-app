@@ -21,7 +21,7 @@ const Market = () => {
       <section data-aos="zoom-out" className="center">
         {/* Hero */}
 
-        <article className="hero mb-[30px] flex justify-between h-[148px] bg-[#25401D] rounded-[10px] w-full">
+        <article className="hero overflow-x-hidden mb-[30px] flex justify-between h-[148px] bg-[#25401D] rounded-[10px] w-full">
           <div className="text pt-[20px] w-[50%] pl-[20px] text-white">
             <h1 className="text-[18px]  font-semibold mb-[18px]">
               Always ready for you
